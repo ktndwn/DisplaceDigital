@@ -97,8 +97,8 @@ body {
 
 
 #showcase-container {
-    min-height: 400px;
-    height: 100vh;
+    min-height: 50vh;
+    height: auto;
     width: auto;
     text-align: center;
     background-color: #111;
@@ -138,6 +138,56 @@ body {
     transition: all .25s ease-in-out;
 }
 
+#portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#portfolio-container div {
+    background-color: #222;
+    height: 300px;
+    width: 300px;
+    margin: 20px 10px;
+    padding: 10px;
+    transition: all .25s ease-in-out;
+}
+
+
+#portfolio-container img {
+    position: absolute;
+    top: inherit;
+    left: inherit;
+    z-index: 1;
+    height: 300px;
+    transform: translate(-50%, 0);
+    transition: all .25s ease-in-out;
+}
+
+#portfolio-container a {
+    position: absolute;
+    top: inherit;
+    left: inherit;
+    z-index: 2;
+    margin-top: 140px;
+    text-decoration: none;
+    font-size: 17px;
+    opacity: 0;
+    transform: translate(-50%, 20px);
+    transition: all .25s ease-in-out;
+}
+
+#portfolio-container div:hover img {
+    opacity: .25;
+    transition: all .25s ease-in-out;
+}
+
+#portfolio-container div:hover a {
+    opacity: 1;
+    transform: translate(-50%, 0);
+    transition: all .25s ease-in-out;
+}
+
 #contact-container {
     display: flex;
     flex-wrap: wrap;
@@ -153,7 +203,7 @@ body {
     background-color: #111;
     height: 300px;
     width: 300px;
-    margin: 10px;
+    margin: 20px 10px;
     padding: 10px;
     border: solid 1px rgb(17, 17, 17, 1);
     transition: all .25s ease-in-out;
