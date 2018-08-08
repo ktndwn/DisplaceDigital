@@ -13,6 +13,7 @@ body {
     background-color: #333;
 }
 
+
 #video-container {
     overflow: hidden;   
 }
@@ -30,20 +31,6 @@ body {
     transform: translate(-50%, 0%);
 }
 
-
-/*
-#video-container video {
-    position: absolute;
-    z-index: -99;
-    min-width: 100%;
-    min-height: 100%;
-    height: auto;
-    width: auto;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-*/
 
 
 #link-container {
@@ -88,7 +75,7 @@ body {
 @keyframes fadein {
     0% {
         opacity: 0;
-        transform: translate(0px, 50px);
+        transform: translate(0px, 25px);
     }
     50% {
         opacity: .5;
@@ -113,19 +100,85 @@ body {
     min-height: 400px;
     height: 100vh;
     width: auto;
+    text-align: center;
     background-color: #111;
 }
 
+.title {
+    font-weight: 400;
+    font-size: 20px;
+    padding: 10px 0;
+    color: deepskyblue;
+}
+
+.text-content {
+    font-size: 17px;
+}
+
+.text-content a {
+    font-size: 17px;
+    color: deepskyblue;
+    text-decoration: none;
+    border-bottom: solid 1px rgba(0, 191, 255, 0);
+    transition: all .25s ease-in-out;
+}
+
+.text-content a:hover {
+    border-bottom: solid 1px rgba(0, 191, 255, 1);
+    transition: all .25s ease-in-out;
+}
+
+#about-container {
+    margin: auto;
+    font-weight: 400;
+    font-size: 20px;
+    padding: 50px 15px;
+    background-color: #222;
+    width: 800px;
+    transition: all .25s ease-in-out;
+}
+
 #contact-container {
-    min-height: 400px;
-    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    min-height: 320px;
+    height: auto;
+    padding: 50px 15px;
     width: auto;
     background: #222;
 }
 
+#contact-container div {
+    background-color: #111;
+    height: 300px;
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+    border: solid 1px rgb(17, 17, 17, 1);
+    transition: all .25s ease-in-out;
+}
 
-@media (max-width: 500px) {
+#contact-container div:hover {
+    border: solid 1px rgba(0, 191, 255, 1);
+    transition: all .25s ease-in-out;
+}
+
+#map img {
+    width: 300px;
+}
+
+
+@media (max-width: 1000px) {
     .link {
         font-size: 12px;
+    }
+
+    .text-content {
+        font-size: 15px;
+    }
+
+    #about-container {
+        width: 300px;
     }
 }
