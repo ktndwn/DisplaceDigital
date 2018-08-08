@@ -227,8 +227,16 @@ body {
 }
 
 #map img {
+    opacity: .75;
     width: 300px;
+    transition: all .25s ease-in-out;
 }
+
+#map img:hover {
+    opacity: 1;
+    transition: all .25s ease-in-out;
+}
+
 
 
 @media (max-width: 1000px) {
