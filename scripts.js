@@ -1,8 +1,8 @@
 
 
 
-let linkWithoutTitle = '<div class="link" id="showcase-link">OUR WORK</div><h1 id="placeholder-title">Displace Digital</h1><div class="link" id="contact-link">CONTACT</div>'
-let linkWithTitle = '<div class="link" id="showcase-link">OUR WORK</div><h1 class="link" id="title-link">Displace Digital</h1><div class="link" id="contact-link">CONTACT</div>'
+let linkWithoutTitle = '<div class="link" id="showcase-link">OUR WORK</div><h1 id="placeholder-title">Displace Media</h1><div class="link" id="contact-link">CONTACT</div>'
+let linkWithTitle = '<div class="link" id="showcase-link">OUR WORK</div><h1 class="link" id="title-link">Displace Media</h1><div class="link" id="contact-link">CONTACT</div>'
 let above = true
 
 let linkListener = () => {
