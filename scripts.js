@@ -60,4 +60,14 @@ let addTitle = () => {
 }
 
 
+L.mapbox.accessToken = 'pk.eyJ1Ijoia3RuZHduIiwiYSI6ImNqajZjeDQxczIybjIzcXBncXcwMGdycnUifQ.-1gqjlqOHsmFHwj0sfp68A'
+
+let map = L.mapbox.map('map', 'mapbox.dark', {
+    minZoom: 1,
+    maxZoom: 20
+}).setView([47.255, -122.44], 10)
+
+
+L.marker([47.255, -122.44]).addTo(map)
+
 
