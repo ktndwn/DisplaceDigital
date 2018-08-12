@@ -65,9 +65,9 @@ L.mapbox.accessToken = 'pk.eyJ1Ijoia3RuZHduIiwiYSI6ImNqajZjeDQxczIybjIzcXBncXcwM
 let map = L.mapbox.map('map', 'mapbox.dark', {
     minZoom: 1,
     maxZoom: 20
-}).setView([47.255, -122.44], 10)
+}).setView([47.255, -122.44], 11)
 
 
-L.marker([47.255, -122.44]).addTo(map)
+L.marker([47.253, -122.44]).addTo(map)
 
 
