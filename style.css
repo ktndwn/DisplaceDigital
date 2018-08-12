@@ -238,6 +238,7 @@ form textarea {
 }
 
 #submit-button:hover {
+    font-weight: 700;
     cursor: pointer;
     background-color: deepskyblue;
     color: #111;
